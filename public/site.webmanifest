@@ -1,0 +1,17 @@
+{
+  "name": "Ladylike Nails",
+  "short_name": "LADYLIKE",
+  "description": "Nagelstudio in Stans – Inspiration für gepflegte Nägel und deinen persönlichen Look.",
+  "lang": "de-CH",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F1EC",
+  "theme_color": "#76384A",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
