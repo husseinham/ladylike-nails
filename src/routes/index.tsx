@@ -142,11 +142,14 @@ function SignatureLine() {
       aria-label={text}
       className="overflow-hidden border-y border-[color:var(--border)] bg-[color:var(--blush)] py-6"
     >
-      <div className="marquee-track flex whitespace-nowrap font-serif text-3xl italic text-espresso md:text-4xl">
-        <span className="px-4">{text}</span>
-        <span className="px-4" aria-hidden>
-          {text}
-        </span>
+      <div className="marquee-track flex w-max items-center whitespace-nowrap font-serif text-2xl italic leading-normal text-espresso md:text-3xl">
+        {[0, 1].map((group) => (
+          <div key={group} className="flex min-w-[100vw] shrink-0 items-center justify-around" aria-hidden={group === 1 ? true : undefined}>
+            {[0, 1, 2].map((item) => (
+              <span key={item} className="block shrink-0 px-6">{text}</span>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );
