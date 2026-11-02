@@ -23,7 +23,7 @@ export function Lookbook() {
   };
 
   return (
-    <section id="inspiration" className="border-t border-[color:var(--border)] py-24 md:py-36">
+    <section id="inspiration" className="border-t border-[color:var(--border)] py-14 md:py-20">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <div className="grid gap-6 md:grid-cols-[auto_1fr_auto] md:items-end md:gap-16">
           <span className="eyebrow">02 — The Ladylike Edit</span>

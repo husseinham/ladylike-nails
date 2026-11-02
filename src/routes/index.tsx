@@ -79,9 +79,9 @@ function Home() {
 
 function Hero() {
   return (
-    <section className="relative min-h-[96dvh] overflow-hidden pt-28 md:min-h-dvh md:pt-24">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-12 gap-6 px-6 md:px-10">
-        <div className="col-span-12 md:col-span-7 md:pt-16">
+    <section className="relative overflow-hidden pt-28 pb-14 md:pt-32 md:pb-20">
+      <div className="mx-auto grid max-w-[1440px] grid-cols-12 items-center gap-6 px-6 md:px-10">
+        <div className="col-span-12 md:col-span-7">
           <span className="eyebrow rise rise-1">Nail Studio · Stans</span>
           <h1 className="mt-6 font-serif text-[16vw] uppercase leading-[0.84] tracking-[-0.04em] text-espresso md:mt-10 md:text-[8vw] xl:text-[7.5rem]">
             <span className="block rise rise-1">Deine Nägel.</span>
@@ -112,7 +112,7 @@ function Hero() {
         </div>
 
         <div className="relative col-span-12 mt-8 md:col-span-5 md:mt-0">
-          <div className="relative mx-auto aspect-[3/4] max-h-[84dvh] w-full max-w-[520px] overflow-hidden bg-sand grain">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[440px] overflow-hidden bg-sand grain">
             {/* DEMO IMAGE – REPLACE WITH APPROVED LADYLIKE NAILS PHOTOGRAPHY */}
             <img
               src={heroHand}
@@ -154,7 +154,7 @@ function SignatureLine() {
 
 function Studio() {
   return (
-    <section id="studio" className="scroll-mt-24 py-24 md:py-40">
+    <section id="studio" className="scroll-mt-24 py-14 md:py-20">
       <div className="mx-auto grid max-w-[1440px] gap-16 px-6 md:grid-cols-2 md:gap-24 md:px-10">
         <div>
           <span className="eyebrow">01 — Ladylike Nails</span>
@@ -173,7 +173,7 @@ function Studio() {
           </p>
         </div>
         <div className="relative">
-          <div className="relative ml-auto aspect-[4/5] w-[92%] overflow-hidden bg-sand md:mt-16">
+          <div className="relative ml-auto aspect-[5/4] w-full overflow-hidden bg-sand">
             {/* DEMO IMAGE – REPLACE WITH APPROVED LADYLIKE NAILS PHOTOGRAPHY */}
             <img
               src={studioDetail}
@@ -196,7 +196,7 @@ function Studio() {
 function Offer() {
   const activeServices = business.services.filter((service) => service.active);
   return (
-    <section id="angebot" className="border-t border-[color:var(--border)] py-24 md:py-36">
+    <section id="angebot" className="border-t border-[color:var(--border)] py-14 md:py-20">
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-[auto_1fr] md:gap-24 md:px-10">
         <span className="eyebrow">03 — Angebot</span>
         <div className="max-w-2xl">
@@ -229,7 +229,7 @@ function Offer() {
 
 function SignatureMoment() {
   return (
-    <section className="relative overflow-hidden bg-espresso py-24 text-ivory md:py-40">
+    <section className="relative overflow-hidden bg-espresso py-14 text-ivory md:py-20">
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-2 md:items-center md:gap-16 md:px-10">
         <div>
           <span className="text-[11px] tracking-[0.28em] uppercase text-rose">
@@ -262,7 +262,7 @@ function SignatureMoment() {
 
 function ColourEditSection() {
   return (
-    <section className="border-t border-[color:var(--border)] py-24 md:py-36">
+    <section className="border-t border-[color:var(--border)] py-14 md:py-20">
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <div className="grid gap-6 md:grid-cols-[auto_1fr] md:items-end md:gap-16">
           <div>
@@ -298,11 +298,11 @@ function About() {
   return (
     <section
       id="ueber-uns"
-      className="scroll-mt-24 border-t border-[color:var(--border)] bg-blush/35 py-24 md:py-40"
+      className="scroll-mt-24 border-t border-[color:var(--border)] bg-blush/35 py-14 md:py-20"
     >
       <div className="mx-auto grid max-w-[1440px] gap-16 px-6 md:grid-cols-2 md:gap-24 md:px-10">
         <div className="relative order-2 md:order-1">
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-sand">
+          <div className="relative aspect-[5/4] w-full overflow-hidden bg-sand">
             {/* OWNER PORTRAIT PLACEHOLDER – REPLACE WITH APPROVED PHOTOGRAPHY */}
             <img
               src={portrait}
@@ -317,7 +317,7 @@ function About() {
             Portrait-Platzhalter · Bild noch nicht freigegeben
           </p>
         </div>
-        <div className="order-1 md:order-2 md:pt-16">
+        <div className="order-1 md:order-2 md:self-center">
           <span className="eyebrow">04 — Behind Ladylike</span>
           <h2 className="mt-6 font-serif text-5xl leading-[1.02] text-espresso md:text-7xl">
             Hallo,
@@ -341,7 +341,7 @@ function About() {
 
 function Note() {
   return (
-    <section className="py-24 md:py-36">
+    <section className="py-14 md:py-20">
       <div className="mx-auto max-w-3xl px-6">
         <div className="border border-[color:var(--border)] bg-ivory p-10 md:p-16">
           <span className="eyebrow">A note from Slavica</span>
@@ -358,7 +358,7 @@ function Note() {
 
 function Location() {
   return (
-    <section className="border-t border-[color:var(--border)] bg-blush/30 py-24 md:py-36">
+    <section className="border-t border-[color:var(--border)] bg-blush/30 py-14 md:py-20">
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-2 md:gap-24 md:px-10">
         <div>
           <div className="font-serif text-[23vw] uppercase leading-none text-espresso md:text-[9rem]">
@@ -395,23 +395,17 @@ function Location() {
             Termine und Verfügbarkeit bitte direkt anfragen.
           </p>
         </div>
-        <div className="location-card flex aspect-square items-center justify-center border border-[color:var(--border)] bg-ivory p-8 text-center">
-          <div>
-            <div className="font-serif text-7xl italic text-burgundy">LN</div>
-            <div className="mt-5 text-[11px] tracking-[0.28em] uppercase text-warmgrey">
-              {business.street}
-              <br />
-              {business.postalCode} {business.city}
-            </div>
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-hair mt-8 inline-block text-xs uppercase tracking-[0.2em]"
-            >
-              In Google Maps öffnen
-            </a>
-          </div>
+        <div className="overflow-hidden border border-[color:var(--border)] bg-ivory md:self-stretch">
+          <iframe
+            title="Ladylike Nails – Standort in Stans"
+            src={`https://www.google.com/maps?q=${encodeURIComponent(`${business.brandName}, ${business.street}, ${business.postalCode} ${business.city}`)}&output=embed`}
+            width="600"
+            height="450"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="h-[380px] w-full border-0 md:h-full md:min-h-[420px]"
+            allowFullScreen
+          />
         </div>
       </div>
     </section>
@@ -446,8 +440,7 @@ function Legal() {
           <h2 className="mt-4 font-serif text-3xl text-espresso">Hinweise zur Datenverarbeitung</h2>
           <div className="mt-6 space-y-4 text-sm leading-relaxed text-warmgrey">
             <p>
-              Diese Website verwendet derzeit keine Analyse- oder Marketingdienste. Der externe
-              Kartenlink wird erst geöffnet, wenn du ihn aktiv auswählst.
+              Diese Website verwendet derzeit keine Analyse- oder Marketingdienste. Im Standortbereich ist Google Maps eingebunden. Beim Laden der Karte wird eine Verbindung zu Google aufgebaut; dabei können IP-Adresse und technische Browserdaten übermittelt werden. Für die Verarbeitung durch Google gilt die Datenschutzerklärung von Google.
             </p>
             <p>
               Gespeicherte Looks werden ausschliesslich lokal im Browser deines Geräts gespeichert.

@@ -9,7 +9,7 @@ export function MoodFinder() {
     <section
       id="nail-mood"
       aria-labelledby="mood-title"
-      className="scroll-mt-24 border-t border-[color:var(--border)] bg-[color:var(--ivory)] py-24 md:py-36"
+      className="scroll-mt-24 border-t border-[color:var(--border)] bg-[color:var(--ivory)] py-14 md:py-20"
     >
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <div className="grid gap-4 md:grid-cols-[auto_1fr] md:gap-16">
@@ -28,7 +28,7 @@ export function MoodFinder() {
           </div>
         </div>
 
-        <div className="mt-16 grid gap-10 md:grid-cols-[1fr_1.1fr] md:gap-16">
+        <div className="mt-10 grid items-start gap-10 md:grid-cols-[1fr_1.1fr] md:gap-16">
           <div>
             <div
               role="tablist"
@@ -92,7 +92,7 @@ export function MoodFinder() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/5] overflow-hidden bg-sand">
+          <div className="relative aspect-[5/4] overflow-hidden bg-sand md:aspect-auto md:h-[480px]">
             {moods.map((m) => (
               <img
                 key={m.key}

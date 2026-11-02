@@ -6,7 +6,7 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
-import mSoft from "@/assets/mood-natural.jpg";
+import mSoft from "@/assets/gallery-1.jpg";
 import mClassic from "@/assets/mood-classic.jpg";
 import mColour from "@/assets/mood-colour.jpg";
 import mBold from "@/assets/mood-statement.jpg";

@@ -40,7 +40,7 @@ export function ContactForm() {
   return (
     <section
       id="kontakt"
-      className="scroll-mt-24 border-t border-[color:var(--border)] py-24 md:py-36"
+      className="scroll-mt-24 border-t border-[color:var(--border)] py-14 md:py-20"
     >
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-[1fr_1.2fr] md:gap-24 md:px-10">
         <div>
